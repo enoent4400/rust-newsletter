@@ -1,5 +1,8 @@
-use rust_newsletter::run;
+use rust_newsletter::startup::run;
 use std::net::TcpListener;
+
+mod routes;
+
 
 #[tokio::main]
 async fn main() -> std::io::Result<()> {

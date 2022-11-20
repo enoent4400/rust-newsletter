@@ -1,5 +1,5 @@
 use std::net::TcpListener;
-use rust_newsletter::run;
+use rust_newsletter::startup::run;
 // Launch our application in the background ~somehow~
 fn spawn_app() -> String {
     let listener = TcpListener::bind("127.0.0.1:0")
